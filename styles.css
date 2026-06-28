@@ -321,6 +321,41 @@ h1 {
   padding-top: 14px;
 }
 
+.faq {
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+
+.faq h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.faq-grid > div {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.68);
+  padding: 16px;
+}
+
+.faq-grid h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.faq-grid p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -488,7 +523,8 @@ h1 {
   }
 
   .hero,
-  .details {
+  .details,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 

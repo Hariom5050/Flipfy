@@ -3,15 +3,94 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Flipfy is a free privacy-first flipbook to PDF converter. Convert ZIP flipbooks, PDF flipbooks, and image page sequences into PDFs directly in your browser with no uploads, no servers, no tracking, and no account.">
+    <meta name="keywords" content="flipbook to PDF, flipbook converter, convert flipbook to PDF, ZIP flipbook to PDF, online flipbook to PDF, private PDF converter, browser PDF converter">
+    <meta name="author" content="Hariom Singh">
+    <meta name="robots" content="index, follow">
     <meta name="referrer" content="no-referrer">
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; worker-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
     >
-    <title>Flipfy - Private Flipbook to PDF Converter</title>
+    <title>Flipbook to PDF Converter - Free, Private, No Uploads | Flipfy</title>
+    <link rel="canonical" href="https://flipfy.netlify.app/">
     <link rel="icon" type="image/png" href="assets/flipfy-logo-icon.png">
     <link rel="apple-touch-icon" href="assets/flipfy-logo-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Flipfy">
+    <meta property="og:title" content="Flipfy - Free Private Flipbook to PDF Converter">
+    <meta property="og:description" content="Convert flipbooks to PDF in your browser. No uploads, no servers, no tracking, no accounts.">
+    <meta property="og:url" content="https://flipfy.netlify.app/">
+    <meta property="og:image" content="https://flipfy.netlify.app/assets/flipfy-logo-wordmark.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flipfy - Flipbook to PDF Converter">
+    <meta name="twitter:description" content="A free privacy-first flipbook to PDF converter that works entirely in your browser.">
+    <meta name="twitter:image" content="https://flipfy.netlify.app/assets/flipfy-logo-wordmark.png">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://flipfy.netlify.app/#app",
+            "name": "Flipfy",
+            "url": "https://flipfy.netlify.app/",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Any modern browser",
+            "description": "Flipfy is a free privacy-first flipbook to PDF converter that converts ZIP flipbooks, PDF flipbooks, and image page sequences into PDF files directly in the browser.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "creator": {
+              "@type": "Person",
+              "name": "Hariom Singh",
+              "url": "https://github.com/Hariom5050"
+            },
+            "featureList": [
+              "Convert ZIP flipbooks to PDF",
+              "Convert image sequences to PDF",
+              "Process files locally in the browser",
+              "No uploads",
+              "No account required",
+              "No tracking"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://flipfy.netlify.app/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do I convert a flipbook to PDF?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Open Flipfy, drop a ZIP flipbook, PDF flipbook, or image page sequence, click Convert to PDF, and download the generated PDF."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Flipfy upload my flipbook files?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Flipfy processes files locally in your browser. There are no server uploads, accounts, analytics, or tracking."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What flipbook formats does Flipfy support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Flipfy supports ZIP flipbooks that contain page images or PDFs, existing PDF flipbooks, and image sequences such as JPG, PNG, WebP, BMP, and GIF."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <main class="shell">
@@ -20,8 +99,8 @@
           <img class="brand-wordmark" src="assets/flipfy-logo-wordmark.png" alt="Flipfy">
           <h1 id="title">Convert flipbooks to PDF in your browser.</h1>
           <p class="lede">
-            Drop a ZIP flipbook, PDF flipbook, or image sequence and download a
-            standard PDF. Your files never leave this device.
+            Free flipbook to PDF converter for ZIP flipbooks, PDF flipbooks, and
+            image page sequences. Your files never leave this device.
           </p>
         </div>
 
@@ -104,8 +183,37 @@
         </div>
       </section>
 
+      <section class="faq" id="faq" aria-labelledby="faqTitle">
+        <p class="eyebrow">Flipbook to PDF FAQ</p>
+        <h2 id="faqTitle">Built for private, simple conversion.</h2>
+        <div class="faq-grid">
+          <div>
+            <h3>How do I convert a flipbook to PDF?</h3>
+            <p>
+              Drop a ZIP flipbook, PDF flipbook, or image page sequence into
+              Flipfy, click Convert to PDF, and download the generated file.
+            </p>
+          </div>
+          <div>
+            <h3>Are my files uploaded?</h3>
+            <p>
+              No. Flipfy processes files locally in your browser. There are no
+              uploads, no servers, no tracking, and no accounts.
+            </p>
+          </div>
+          <div>
+            <h3>Which flipbook files are supported?</h3>
+            <p>
+              Flipfy supports ZIP flipbooks with page images or PDFs, existing
+              PDF flipbooks, and image sequences like JPG, PNG, WebP, BMP, and GIF.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <footer class="site-footer" aria-label="Footer">
         <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
         <button type="button" data-modal-open="aboutModal">About</button>
         <button type="button" data-modal-open="supportModal">Support</button>
         <a href="https://github.com/Hariom5050" target="_blank" rel="noopener noreferrer">GitHub</a>
