@@ -157,36 +157,68 @@
         </div>
       </section>
 
-      <section class="details" id="privacy" aria-label="Supported inputs and privacy details">
-        <div>
-          <h2>Supported now</h2>
-          <p>
-            ZIP flipbooks are scanned for page images or PDFs. Existing PDF
-            flipbooks are copied directly. Image sequences are sorted by filename
-            and assembled into a high-quality PDF.
-          </p>
-        </div>
-        <div>
-          <h2>Handled safely</h2>
-          <p>
-            SWF and proprietary flipbook packages are detected and rejected with a
-            clear message because modern browsers cannot parse them safely without
-            extra runtimes.
-          </p>
-        </div>
-        <div>
-          <h2>Session only</h2>
-          <p>
-            Flipfy does not use localStorage, cookies, analytics, forms, or
-            network requests. Closing the tab clears the working state.
-          </p>
-        </div>
-      </section>
+      <footer class="site-footer" aria-label="Footer">
+        <button type="button" data-modal-open="privacyModal">Privacy</button>
+        <button type="button" data-modal-open="faqModal">FAQ</button>
+        <a href="llms.txt">AI info</a>
+        <button type="button" data-modal-open="aboutModal">About</button>
+        <button type="button" data-modal-open="supportModal">Support</button>
+        <a href="https://github.com/Hariom5050" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:hk1587403@gmail.com">Contact</a>
+      </footer>
+    </main>
 
-      <section class="faq" id="faq" aria-labelledby="faqTitle">
-        <p class="eyebrow">Flipbook to PDF FAQ</p>
-        <h2 id="faqTitle">Built for private, simple conversion.</h2>
-        <div class="faq-grid">
+    <div class="modal-backdrop" id="modalBackdrop" hidden></div>
+
+    <dialog class="info-modal" id="privacyModal" aria-labelledby="privacyTitle">
+      <div class="modal-head">
+        <div>
+          <p class="modal-kicker">Privacy</p>
+          <h2 id="privacyTitle">Private by design</h2>
+        </div>
+        <button class="icon-button" type="button" data-modal-close aria-label="Close privacy dialog">x</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-info-grid">
+          <div>
+            <h3>Supported now</h3>
+            <p>
+              ZIP flipbooks are scanned for page images or PDFs. Existing PDF
+              flipbooks are copied directly. Image sequences are sorted by
+              filename and assembled into a high-quality PDF.
+            </p>
+          </div>
+          <div>
+            <h3>Handled safely</h3>
+            <p>
+              SWF and proprietary flipbook packages are detected and rejected
+              with a clear message because modern browsers cannot parse them
+              safely without extra runtimes.
+            </p>
+          </div>
+          <div>
+            <h3>Session only</h3>
+            <p>
+              Flipfy does not use localStorage, cookies, analytics, forms, or
+              network requests. Closing the tab clears the working state.
+            </p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="info-modal" id="faqModal" aria-labelledby="faqTitle">
+      <div class="modal-head">
+        <div>
+          <p class="modal-kicker">Flipbook to PDF FAQ</p>
+          <h2 id="faqTitle">Built for private, simple conversion.</h2>
+        </div>
+        <button class="icon-button" type="button" data-modal-close aria-label="Close FAQ dialog">x</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-info-grid">
           <div>
             <h3>How do I convert a flipbook to PDF?</h3>
             <p>
@@ -209,20 +241,8 @@
             </p>
           </div>
         </div>
-      </section>
-
-      <footer class="site-footer" aria-label="Footer">
-        <a href="#privacy">Privacy</a>
-        <a href="#faq">FAQ</a>
-        <a href="llms.txt">AI info</a>
-        <button type="button" data-modal-open="aboutModal">About</button>
-        <button type="button" data-modal-open="supportModal">Support</button>
-        <a href="https://github.com/Hariom5050" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:hk1587403@gmail.com">Contact</a>
-      </footer>
-    </main>
-
-    <div class="modal-backdrop" id="modalBackdrop" hidden></div>
+      </div>
+    </dialog>
 
     <dialog class="info-modal" id="aboutModal" aria-labelledby="aboutTitle">
       <div class="modal-head">
