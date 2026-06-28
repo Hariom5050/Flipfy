@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://flipfy.netlify.app/sitemap.xml
+
+Host: https://flipfy.netlify.app
